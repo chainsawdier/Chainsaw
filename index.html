@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário para Eventos</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" integrity="sha512-LQZOhIZKntC/0DfKzJGQeefILvZZV1Mf+ba5CK5rnSZg5wvdf5bdL+zmH9osd7J50Kj+78p7bz/jaRb+VcEzhw==" crossorigin="anonymous"></script>
-
+	<script src="https://cdn.jsdelivr.net/npm/docxtemplater@3.9.1/dist/docxtemplater.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
   </head>
   <body>
     <h1>Formulário para Eventos</h1>
@@ -71,9 +71,10 @@
                     "Itens: " + itens.join(", ") + "\n";
         var blob = new Blob([texto], {type: "application/vnd.openxmlformats-officedocument.wordprocessingml.document"});
 
-        saveAs(blob, "formulario.txt");
+        saveAs(blob, "formulario.doc");
       }
     </script>
   </body>
 </html>
+
 
