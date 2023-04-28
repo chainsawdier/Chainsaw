@@ -1,4 +1,4 @@
-<!DOCTYPE html><!DOCTYPE html><!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html><!DOCTYPE html><!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -178,15 +178,15 @@
           var pdf = new jsPDF();
           pdf.text("Contrato", 10, 10);
           pdf.text("Nome: " + nome, 10, 20);
-          pdf.text("CPF: " + cpf, 10, 20);
-          pdf.text("Endereço do Evento: " + endereco, 10, 30);
-          pdf.text("Data do Evento: " + data, 10, 40);
-          pdf.text("Hora de Montagem: " + horaMontagem, 10, 50);
-          pdf.text("Hora de Desmonte: " + horaDesmonte, 10, 60);
-          pdf.text("E-mail: " + email, 10, 70);
-          pdf.text("Telefone: " + telefone, 10, 80);
+          pdf.text("CPF: " + cpf, 10, 30);
+          pdf.text("Endereço do Evento: " + endereco, 10, 40);
+          pdf.text("Data do Evento: " + data, 10, 50);
+          pdf.text("Hora de Montagem: " + horaMontagem, 10, 60);
+          pdf.text("Hora de Desmonte: " + horaDesmonte, 10, 70);
+          pdf.text("E-mail: " + email, 10, 80);
+          pdf.text("Telefone: " + telefone, 10, 90);
           for (var i = 0; i < itens.length; i++) {
-            pdf.text("Itens: " + itens[i], 10, 90 + i * 10);
+            pdf.text("Itens: " + itens[i], 10, 100 + i * 10);
           }
           pdf.save("contrato.pdf"); // Salva o PDF com o nome "contrato.pdf"
         });
@@ -194,5 +194,4 @@
     </script>
   </body>
 </html>
-
 
