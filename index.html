@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8">
@@ -6,6 +6,7 @@
     <title>Formulário para Eventos</title>
 	<script src="https://cdn.jsdelivr.net/npm/docxtemplater@3.9.1/dist/docxtemplater.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js" integrity="sha512-WtRovc8TakWtRXrZI0ugYRATV7wtuFJd4VSc3ncq3MqQL7Z08vpkMYAJ89wO5Y5l5I5UDyAY6CmOceUpxO6gkw==" crossorigin="anonymous"></script>
   </head>
   <body>
     <h1>Formulário para Eventos</h1>
@@ -49,32 +50,39 @@
 
     <script>
       function salvarFormulario() {
-        var nome = document.getElementById("nome").value;
-        var endereco = document.getElementById("endereco").value;
-        var data = document.getElementById("data").value;
-        var horaMontagem = document.getElementById("hora-montagem").value;
-        var horaDesmonte = document.getElementById("hora-desmonte").value;
-        var email = document.getElementById("email").value;
-        var telefone = document.getElementById("telefone").value;
-        var itens = [];
-        var checkboxes = document.querySelectorAll('input[name="itens[]"]:checked');
-        for (var i = 0; i < checkboxes.length; i++) {
-          itens.push(checkboxes[i].value);
-        }
-        var texto = "Nome: " + nome + "\n" +
-                    "Endereço do Evento: " + endereco + "\n" +
-                    "Data do Evento: " + data + "\n" +
-                    "Hora de Montagem: " + horaMontagem + "\n" +
-                    "Hora de Desmonte: " + horaDesmonte + "\n" +
-                    "E-mail: " + email + "\n" +
-                    "Telefone: " + telefone + "\n" +
-                    "Itens: " + itens.join(", ") + "\n";
-        var blob = new Blob([texto], {type: "application/vnd.openxmlformats-officedocument.wordprocessingml.document"});
+  var nome = document.getElementById("nome").value;
+  var endereco = document.getElementById("endereco").value;
+  var data = document.getElementById("data").value;
+  var horaMontagem = document.getElementById("hora-montagem").value;
+  var horaDesmonte = document.getElementById("hora-desmonte").value;
+  var email = document.getElementById("email").value;
+  var telefone = document.getElementById("telefone").value;
+  var itens = [];
+  var checkboxes = document.querySelectorAll('input[name="itens[]"]:checked');
+  for (var i = 0; i < checkboxes.length; i++) {
+    itens.push(checkboxes[i].value);
+  }
 
-        saveAs(blob, "formulario.doc");
-      }
+  // Criar um novo documento PDF
+  var doc = new jsPDF();
+
+  // Adicionar conteúdo ao documento PDF
+  doc.text("Contrato", 10, 10);
+  doc.text("Nome: " + nome, 10, 20);
+  doc.text("Endereço do Evento: " + endereco, 10, 30);
+  doc.text("Data do Evento: " + data, 10, 40);
+  doc.text("Hora de Montagem: " + horaMontagem, 10, 50);
+  doc.text("Hora de Desmonte: " + horaDesmonte, 10, 60);
+  doc.text("E-mail: " + email, 10, 70);
+  doc.text("Telefone: " + telefone, 10, 80);
+  doc.text("Itens: " + itens.join(", "), 10, 90);
+
+  // Salvar o documento PDF
+  doc.save("contrato.pdf");
+}
     </script>
   </body>
 </html>
+
 
 
