@@ -31,7 +31,7 @@
         <input type="text" id="endereco" name="endereco" required /><br />
 
         <label for="data">Data do Evento:</label>
-        <input type="date" id="data" name="data" value="dd-mm-yyyy"required /><br />
+        <input type="date" id="data" name="data" required /><br />
 
         <label for="hora-montagem">Hora de Montagem:</label>
         <input
@@ -223,10 +223,10 @@
           pdf.text("De acordo, Vovô Brinquedos para Festas.",15, 220);
           pdf.text("Desde já agradecemos a preferência.",15, 225);
          
-          var data = new Date();
-          var dia = String(data.getDate()).padStart(2, '0');
-          var mes = String(data.getMonth() + 1).padStart(2, '0');
-          var ano = data.getFullYear();
+          var dataa = new Date();
+          var dia = String(dataa.getDate()).padStart(2, '0');
+          var mes = String(dataa.getMonth() + 1).padStart(2, '0');
+          var ano = dataa.getFullYear();
           dataAtual = dia + '/' + mes + '/' + ano;  
           pdf.setFontSize(10).setFontType('bold');
           pdf.text("São Paulo " + dataAtual +".",15, 235);
