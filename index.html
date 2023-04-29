@@ -185,9 +185,9 @@
         html2canvas(element).then(function (canvas) {
           var imgData = canvas.toDataURL("image/png", 1.0);
           var pdf = new jsPDF();
-          pdf.setFontSize(14);
-          pdf.text("Contrato de Locação - Vovô Brinquedos", 65, 7);
-          pdf.setFontSize(10);
+          pdf.setFontSize(14).setFontType('bold');
+          pdf.text("Contrato de Locação - Vovô Brinquedos", 60, 10);
+          pdf.setFontSize(10).setFontType('normal');
           pdf.text("LOCADOR: Rodrigo Aparecido Duarte, brasileiro, portador do CPF: 329.086.568-17 ", 10, 20);
           pdf.text("LOCATÁRIO: " + nome, 10, 25);
           pdf.text("CPF: " + cpf, 110, 25);
@@ -198,9 +198,24 @@
           pdf.text("data de: " + data, 10, 45);
           pdf.text("iniciando às: " + horaMontagem, 45, 45);
           pdf.text("e com término às: " + horaDesmonte, 80, 45);
-          pdf.text("Recebi de "+ nome + "a quantia de R$"+ pago + " referente ao SINAL DE RESERVA",10, 50);
+          pdf.text("Recebi de "+ nome + " a quantia de R$"+ pago + " referente ao SINAL DE RESERVA",10, 50);
           pdf.text("Restando a quantia de R$"+ rest + " a ser pago até a data do evento em espécie, pix ou cartão.",10, 55);
-                
+          pdf.setFontSize(9).setFontType('bold');
+          pdf.text("NOTAS:",20, 65);
+          pdf.text("1 - Este contrato de locação poderá ser cancelado, desde que a VOVÔ BRINQUEDOS seja avisada com ",15, 75);
+          pdf.text("uma semana de antecedência, para que seja feito o processo de cancelamento, o qual não implicará",15, 80);
+          pdf.text("na devolução do SINAL DE RESERVA pelo LOCADOR, caso LOCATÁRIO tenha efetuado o pagamento da RESERVA",15, 85);
+          pdf.text("2 - Cabe ao LOCATÁRIO verificar se todos os itens ao qual tem desejo de locar cabem no local do evento ",15, 90);
+          pdf.text("NO MOMENTO DA MONTAGEM NÃO SERÁ PERMITIDO O CANCELAMENTO DE ALGUM ITEM POR FALTA DE ESPAÇO",15, 95);
+          pdf.text("3 - Caso a montagem dos itens seja em área aberta, sem cobertura, e no momento de montagem esteja",15, 100);
+          pdf.text("chovendo, cabe ao LOCATÁRIO providenciar uma cobertura à sua escolha, para que os itens sejam",15, 105);
+          pdf.text("montados. OU em casos extremos as duas partes fiquem impossibilitadas do mesmo, o LOCATÁRIO tem",15, 110);
+          pdf.text("o DIREITO DE ESCOLHER UMA NOVA DATA, desde que, esta seja uma data livre,e terá somente como despesa",15, 115);
+          pdf.text("o que se gastar com combustivel para a equipe dar continuídade ao trabalho.",15 ,120);
+          pdf.text("4 - Durante o evento caso não seja contratados monitores, o LOCATÁRIO ficará responsável por quaisquer",15, 125);
+          pdf.text("danos materiais aos equipamentos bem como danos físicos a qualquer usuário do mesmo.",15 ,130)
+          
+
                     
           for (var i = 0; i < itens.length; i++) {
             pdf.text("Itens: " + itens[i], 10, 150 + i * 10);
