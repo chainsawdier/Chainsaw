@@ -69,7 +69,7 @@
               id="kit"
               name="itens[]"
               value="Kit Pegue e monte"
-            /><label for="kit">Kit Pegue e monte</label>
+            /><label for="kit">Kit de decoração Pegue e Monte</label>
           </li>
           <li>
             <input
@@ -77,7 +77,7 @@
               id="piscina1"
               name="itens[]"
               value="Piscina de bolinhas de 1,50"
-            /><label for="piscina1">Piscina de bolinhas de 1,50</label>
+            /><label for="piscina1">Piscina de bolinhas de 1,50mts - 1500 bolinhas</label>
           </li>
           <li>
             <input
@@ -85,7 +85,7 @@
               id="piscina2"
               name="itens[]"
               value="Piscina de bolinhas 2,00"
-            /><label for="piscina2">Piscina de bolinhas 2,00</label>
+            /><label for="piscina2">Piscina de bolinhas 2,00mts -  2000 bolinhas</label>
           </li>
           <li>
             <input
@@ -93,7 +93,7 @@
               id="pula230"
               name="itens[]"
               value="Pula pula 2,30"
-            /><label for="pula230">Pula pula 2,30</label>
+            /><label for="pula230">Pula pula 2,30 - Capacidade de até 80Kg</label>
           </li>
           <li>
             <input
@@ -101,7 +101,7 @@
               id="pula200"
               name="itens[]"
               value="Pula pula 2,00"
-            /><label for="pula200">Pula pula 2,00</label>
+            /><label for="pula200">Pula pula 2,00mts - Capacidade de até 80Kg</label>
           </li>
           <li>
             <input
@@ -109,7 +109,7 @@
               id="tombo"
               name="itens[]"
               value="Tombo legal"
-            /><label for="tombo">Tombo legal</label>
+            /><label for="tombo">Tombo legal 2000 bolinhas - Bivolt - Capacidade até 80Kg </label>
           </li>
           <li>
             <input
@@ -235,7 +235,7 @@
 
 
           for (var i = 0; i < itens.length; i++) {
-            pdf.text("Itens: " + itens[i], 16, 160 + i * 5);
+            pdf.text("-->: " + itens[i], 16, 160 + i * 5);
           }
           pdf.save("contrato.pdf"); // Salva o PDF com o nome "contrato.pdf"
         });
