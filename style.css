@@ -21,9 +21,81 @@ body {
     text-align: center;
     color: #ffffff;
     padding-bottom: 40px;
-    
   }
-  form {
+
+#nome {  
+    position:absolute;  
+    width:290px;
+    left: 100px;
+     background-color: rgb(216, 216, 216);
+}
+
+#cpf {
+    position:absolute;
+    left: 100px;
+    width:165px;
+    background-color: rgb(216, 216, 216);
+}
+
+#endereco {
+    position:absolute;
+    left: 200px;
+    width:190px;
+    background-color: rgb(216, 216, 216);
+}
+#data {
+    position:absolute;
+    left: 200px;
+    width:100px;
+    height: 17px;
+    background-color: rgb(216, 216, 216);
+}
+
+#hora-montagem {
+    position:absolute;
+    left: 200px;
+    height: 17px;
+    background-color: rgb(216, 216, 216);
+}
+
+#hora-desmonte {
+    position:absolute;
+    left: 200px;
+    height: 17px;
+    background-color: rgb(216, 216, 216);
+}
+
+#email {  
+    position:absolute;  
+    width:290px;
+    left: 100px;
+    background-color: rgb(216, 216, 216);
+}    
+
+#telefone {  
+    position:absolute;  
+    width:165px;
+    left: 100px;
+    background-color: rgb(216, 216, 216);
+}  
+
+#pago {
+    position:absolute;  
+    width:165px;
+    left: 200px;
+    background-color: rgb(216, 216, 216);
+}
+
+
+#rest {
+    position:absolute;  
+    width:165px;
+    left: 200px;
+    background-color: rgb(216, 216, 216);
+}
+
+
+form {
     font-weight: bold;
     padding-left: 12px;
     font-size: 18px;
