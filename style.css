@@ -8,7 +8,7 @@ html {
 body {
     background-image: url("fundo2.jpg" );
     background-size: 420px; 
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     padding-left: 0px;
     width: 100%;
     
@@ -21,6 +21,7 @@ body {
     text-align: center;
     color: #ffffff;
     padding-bottom: 40px;
+    
   }
 
 #nome {  
@@ -93,18 +94,16 @@ body {
     left: 200px;
     background-color: rgb(216, 216, 216);
 }
-
-
-form {
-    font-weight: bold;
+  form {
+    font-weight: bold;    
     padding-left: 12px;
     font-size: 18px;
-    color: #000;
+    color: #ffffff;
       text-shadow: 
-               -1px -1px 0px #FFF, 
-               -1px 1px 0px #FFF,                    
-                1px -1px 0px #FFF,                  
-                1px 0px 0px #FFF;	  
+               -1px -1px 0px #000000, 
+               -1px 1px 0px #000000,                    
+                1px -1px 0px #000000,                  
+                1px 0px 0px #000000;
   }
 
   .container {
@@ -121,7 +120,7 @@ form {
     button {
         position: absolute;
         height: 70px;
-	width: 370px;
+	    width: 370px;
         background: #B9DFFF;
         color: #140c7e;
         border: 1px solid #eee;
@@ -143,12 +142,21 @@ form {
         font-weight: bold;
     }    
 li {
-        font-size: 22px;
-	color: #000;
+    
+    font-size: 22px;
+    color: #000;
       text-shadow: 
                -1px -1px 0px #FFF, 
                -1px 1px 0px #FFF,                    
                 1px -1px 0px #FFF,                  
                 1px 0px 0px #FFF;
+
+}
+
+#demo {
+
+    position:absolute;  
+    left: 45px;
+    top: 750px;
 
 }
