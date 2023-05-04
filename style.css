@@ -161,6 +161,6 @@ h1 {
     color: #ffffff;
     padding-bottom: 40px;
     text-shadow: 0px 8px 24px rgba(228,0,0,0.92);
-    border: 1px solid #eee;	
+    z-index:4;	
 }
 
