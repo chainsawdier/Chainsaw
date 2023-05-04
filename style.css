@@ -11,6 +11,8 @@ body {
   }
  
  h1 {
+    position: sticky;
+    top: 20px; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     color: #ffffff;
