@@ -1,7 +1,5 @@
 html {
-    width: 400px;
-    
-       
+    width: 400px;       
 }
 
 
@@ -10,13 +8,10 @@ body {
     background-size: 420px; 
     background-repeat: repeat-y;
     padding-left: 0px;
-    width: 100%;
-    
-           
+    width: 100%;           
   }
-
  
-  h1 {
+ h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     color: #ffffff;
@@ -25,9 +20,8 @@ body {
                -1px -1px 0px #FFF, 
                -1px 1px 0px #FFF,                    
                 1px -1px 0px #FFF,                  
-                1px 0px 0px #FFF;	  
-    
-  }
+                1px 0px 0px #FFF;	    
+}
 
 #nome {  
     position:absolute;  
@@ -49,6 +43,7 @@ body {
     width:190px;
     background-color: rgb(216, 216, 216);
 }
+
 #data {
     position:absolute;
     left: 200px;
@@ -92,7 +87,6 @@ body {
     background-color: rgb(216, 216, 216);
 }
 
-
 #rest {
     position:absolute;  
     width:165px;
@@ -120,9 +114,8 @@ body {
             padding-top: 0px;
             
   }
- 
-	
-    button {
+ 	
+ button {
         position: absolute;
         height: 70px;
 	width: 370px;
@@ -134,9 +127,9 @@ body {
         text-shadow: none;
         font-weight: bold;
         font-size: 20px;
-    }
+ }
     
-    button:hover {
+ button:hover {
 
         background: #016ABC;
         color: #fff;
@@ -156,7 +149,6 @@ li {
                -1px 1px 0px #FFF,                    
                 1px -1px 0px #FFF,                  
                 1px 0px 0px #FFF;
-
 }
 
 #demo {
