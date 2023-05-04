@@ -5,7 +5,8 @@ html {
 body {
     background-image: url("fundo2.jpg" );
     background-size: 420px; 
-    background-repeat: repeat-y;
+    background-attachment: fixed;	
+    background-repeat: no-repeat;
     padding-left: 0px;
     width: 100%;           
   }
