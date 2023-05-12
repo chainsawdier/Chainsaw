@@ -3,6 +3,16 @@ html {
     font-family: Calibri, sans-serif;	
 }
 
+body {
+    background-image: url("fundo2.jpg" );
+    background-size: cover;
+    
+    background-attachment: fixed;	
+    background-repeat: no-repeat;
+    padding-left: 0px;
+    width: 100%;           
+  }
+
 #vovo {
     position: fixed;
     bottom: 0px;
@@ -29,15 +39,6 @@ html {
 
 }
 
-body {
-    background-image: url("fundo2.jpg" );
-    background-size: cover;
-    
-    background-attachment: fixed;	
-    background-repeat: no-repeat;
-    padding-left: 0px;
-    width: 100%;           
-  }
   
 #nome {  
     position:absolute;  
