@@ -9,8 +9,8 @@ html {
     float: right;
     right: 5px;
     z-index: 10;
-    height: 80px;
-    width: 90px;
+    height: 90px;
+    width: 100px;
     
     margin-top: 15px;
     margin-bottom: 5px;
@@ -104,10 +104,10 @@ body {
     font-size: 18px;
     color: #FFFFFF;
     text-shadow: 
-               -1px -1px 0px #DDA0DD, 
-               -1px 1px 0px #DDA0DD,                    
-                1px -1px 0px #DDA0DD,                  
-                1px 0px 0px #DDA0DD;
+               -1px -1px 0px #000000, 
+               -1px 1px 0px #000000,                    
+                1px -1px 0px #000000,                  
+                1px 0px 0px #000000;
   }
 
 
