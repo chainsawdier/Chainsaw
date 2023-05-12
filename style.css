@@ -5,7 +5,7 @@ html {
 
 #vovo {
     position: fixed;
-    bottom: 5px;
+    bottom: 0px;
     float: right;
     right: 5px;
     z-index: 10;
@@ -102,7 +102,7 @@ body {
     font-weight: bold;    
     padding-left: 12px;
     font-size: 18px;
-    color: #000;
+    color: #FFFFFF;
     text-shadow: 
                -1px -1px 0px #DDA0DD, 
                -1px 1px 0px #DDA0DD,                    
