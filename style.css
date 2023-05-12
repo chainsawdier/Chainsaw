@@ -89,10 +89,10 @@ body {
     font-size: 18px;
     color: #000;
     text-shadow: 
-               -1px -1px 0px #FFFFFF, 
-               -1px 1px 0px #FFFFFF,                    
-                1px -1px 0px #FFFFFF,                  
-                1px 0px 0px #FFFFFF;
+               -1px -1px 0px #DC143C, 
+               -1px 1px 0px #DC143C,                    
+                1px -1px 0px #DC143C,                  
+                1px 0px 0px #DC143C;
   }
 
 
@@ -146,10 +146,10 @@ li {
     font-size: 22px;
     color: #000;
     text-shadow: 
-               -1px -1px 0px #FFFFFF, 
-               -1px 1px 0px #FFFFFF,                    
-                1px -1px 0px #FFFFFF,                  
-                1px 0px 0px #FFFFFF;
+               -1px -1px 0px #DC143C, 
+               -1px 1px 0px #DC143C,                    
+                1px -1px 0px #DC143C,                  
+                1px 0px 0px #DC143C;
 }
 
 
