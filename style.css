@@ -103,10 +103,10 @@ body {
     font-size: 18px;
     color: #000;
     text-shadow: 
-               -1px -1px 0px #00BFFF, 
-               -1px 1px 0px #00BFFF,                    
-                1px -1px 0px #00BFFF,                  
-                1px 0px 0px #00BFFF;
+               -1px -1px 0px #DDA0DD, 
+               -1px 1px 0px #DDA0DD,                    
+                1px -1px 0px #DDA0DD,                  
+                1px 0px 0px #DDA0DD;
   }
 
 
@@ -160,10 +160,10 @@ li {
     font-size: 22px;
     color: #000;
     text-shadow: 
-               -1px -1px 0px #00BFFF, 
-               -1px 1px 0px #00BFFF,                    
-                1px -1px 0px #00BFFF,                  
-                1px 0px 0px #00BFFF;
+               -1px -1px 0px #DDA0DD, 
+               -1px 1px 0px #DDA0DD,                    
+                1px -1px 0px #DDA0DD,                  
+                1px 0px 0px #DDA0DD;
 }
 
 
