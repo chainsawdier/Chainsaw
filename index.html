@@ -34,7 +34,7 @@
         <input type="text" id="endereco" name="endereco" required /><br />
 
         <label for="data">Data do Evento:</label>
-        <input type="date" id="data" name="data" onchange="formataBr()" required /><br />
+        <input type="date" id="data" name="data" required /><br />
 
         <label for="hora-montagem">Hora Montagem:</label>
         <input
@@ -177,19 +177,13 @@
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <script>
       
-      function formataBr()
-  {
-   var data = document.querySelector('#data').value; 
-   document.querySelector('#resultadoUSA').innerHTML  =  data;
-   document.querySelector('#resultadoBr').innerHTML  =  data.replace(/(\d*)-(\d*)-(\d*).*/, '$3/$2/$1');
-  }
-      
+        
       function download() {
         // Obter os valores dos campos do formulário
         var nome = document.getElementById("nome").value;
         var cpf = document.getElementById("cpf").value;
         var endereco = document.getElementById("endereco").value;
-        var data = document.getElementById("data").value;
+        var data = document.getElementById("data").replace(/(\d*)-(\d*)-(\d*).*/, '$3/$2/$1');
         var horaMontagem = document.getElementById("hora-montagem").value;
         var horaDesmonte = document.getElementById("hora-desmonte").value;
         var email = document.getElementById("email").value;
