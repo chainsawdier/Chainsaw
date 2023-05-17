@@ -34,7 +34,7 @@
         <input type="text" id="endereco" name="endereco" required /><br />
 
         <label for="data">Data do Evento:</label>
-        <input type="date" id="data" name="data" required /><br />
+        <input type="date" id="data" name="data" onchange="formataBr()"required /><br />
 
         <label for="hora-montagem">Hora Montagem:</label>
         <input
@@ -176,6 +176,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <script>
+      
+      function formataBr()
+  {
+   var data = document.querySelector('#data').value; 
+   document.querySelector('#resultadoUSA').innerHTML  =  data;
+   document.querySelector('#resultadoBr').innerHTML  =  data.replace(/(\d*)-(\d*)-(\d*).*/, '$3/$2/$1');
+  }
+      
       function download() {
         // Obter os valores dos campos do formulário
         var nome = document.getElementById("nome").value;
