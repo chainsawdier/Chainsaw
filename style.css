@@ -109,6 +109,14 @@ body {
     left: 200px;
     background-color: rgb(216, 216, 216);
 }
+
+#obs {  
+    position:absolute;  
+    width:290px;
+    left: 100px;
+    background-color: rgb(216, 216, 216);
+}
+
   form {
     
     font-weight: bold;    
@@ -193,6 +201,7 @@ input {
     padding-left: 10px;
     -webkit-box-shadow: 5px 5px 15px 5px #4B0082; 
 	box-shadow: 5px 5px 15px 5px #4B0082;
+    display: inline-block;
 }
 
 h1 {
