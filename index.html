@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <meta charset="UTF-8" />
@@ -28,7 +28,7 @@
         <input type="text" id="nome" pattern="([aA-zZ]+)" placeholder="Nome do Cliente" name="nome" required /><br />
 
         <label for="cpf">CPF:</label>
-        <input type="text" id="cpf" name="cpf" size="15" required /><br />
+        <input type="number" id="cpf" name="cpf" size="15" required /><br />
 
         <label for="endereco">Endereço Evento:</label>
         <input type="text" id="endereco" name="endereco" required /><br />
@@ -63,6 +63,9 @@
 
         <label for="rest">Valor Restante:</label>
         <input type="rest" id="rest" name="rest" required /><br />
+
+        <label for="obs">Obs:</label>
+        <input type="obs" id="obs" name="obs" required /><br />
 
         
         <ul>
@@ -176,8 +179,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <script>
-      
-        
       function download() {
         // Obter os valores dos campos do formulário
         var nome = document.getElementById("nome").value;
@@ -190,6 +191,7 @@
         var telefone = document.getElementById("telefone").value;
         var pago = document.getElementById("pago").value;
         var rest = document.getElementById("rest").value;
+        var obs = document.getElementById("obs").value;
         var itens = [];
         var checkboxes = document.querySelectorAll(
           'input[name="itens[]"]:checked'
@@ -252,9 +254,14 @@
           pdf.text("LONA DE SALTO, MOLAS, REDE DE PROTEÇÃO,ESCADA, entre outros, conforme o brinquedo contratado.",15,145); 
           pdf.text("ITENS LOCADOS:",15, 155);
 
+          pdf.setFontSize(10).setFontType('bold',);
+
+          pdf.text("(Obs: " + obs + ".)", 100, 222, 'center');
+
           pdf.setFontSize(10).setFontType('normal');
-          pdf.text("De acordo, Vovô Brinquedos para Festas.",15, 220);
-          pdf.text("Desde já agradecemos a preferência.",15, 225);
+          
+          pdf.text("De acordo, Vovô Brinquedos para Festas.",15, 230);
+          pdf.text("Desde já agradecemos a preferência.",15, 235);
          
           var dataa = new Date();
           var dia = String(dataa.getDate()).padStart(2, '0');
@@ -262,7 +269,7 @@
           var ano = dataa.getFullYear();
           dataAtual = dia + '/' + mes + '/' + ano;  
           pdf.setFontSize(10).setFontType('bold');
-          pdf.text("São Paulo " + dataAtual +".",15, 235);
+          pdf.text("São Paulo " + dataAtual +".",15, 245);
           pdf.text("___________________________                                  ___________________________",35,265);
           pdf.text("              LOCATÁRIO                                                                     LOCADOR",35,270);  
 
@@ -270,7 +277,7 @@
           for (var i = 0; i < itens.length; i++) {
             pdf.text("-->: " + itens[i], 16, 160 + i * 5);
           }
-          pdf.save("contrato.pdf"); // Salva o PDF com o nome "contrato.pdf"
+          pdf.save("Contrato_" + nome + ".pdf"); // Salva o PDF com o nome "contrato_NOME.pdf"
         });
       }
     </script>
