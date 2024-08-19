@@ -190,10 +190,10 @@ li {
 
 
 #demo {
-
-    position:absolute;  
+    position: absolute;
+    top: 1000px;
     left: 7px;
-    top: 900px;
+    bottom: auto;
 }
 
 input {
