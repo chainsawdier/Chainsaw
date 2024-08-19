@@ -13,6 +13,7 @@ body {
     width: 100%;           
   }
 
+
 #vovo {
     position: fixed;
     bottom: 0px;
@@ -192,7 +193,7 @@ li {
 
     position:absolute;  
     left: 7px;
-    top: 950px;
+    top: 900px;
 }
 
 input {
@@ -202,6 +203,16 @@ input {
     -webkit-box-shadow: 5px 5px 15px 5px #4B0082; 
 	box-shadow: 5px 5px 15px 5px #4B0082;
     display: inline-block;
+}
+
+#kitt {
+    padding-left: 10px;
+    width:300px;
+    left: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 35px;
+    background-color: rgb(216, 216, 216);
 }
 
 h1 {
